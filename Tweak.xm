@@ -1,5 +1,7 @@
 #import <SpringBoard/SpringBoard.h>
 
+%config(generator=internal)
+
 %hook SBNewsstandApplication
 
 - (BOOL)isNewsstandApplication
