@@ -1,9 +1,15 @@
 Package: com.rpetrich.nonewsisgoodnews
 Priority: optional
 Section: Tweaks
+Maintainer: BigBoss <bigboss@thebigboss.org>
 Architecture: iphoneos-arm
 Version: 0.1
 Description: Hide Newsstand icon and relocate apps to SpringBoard
 Name: NoNewsIsGoodNews
 Depends: firmware (>= 5.0), mobilesubstrate
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=nonewsisgoodnewsData
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=nonewsisgoodnewsData
+Sponsor: thebigboss.org <http://thebigboss.org>
 Author: Ryan Petrich <rpetrich+nonewsisgoodnews@gmail.com>
+Tag: purpose::extension
+dev: rpetrich
