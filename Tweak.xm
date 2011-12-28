@@ -32,6 +32,23 @@
 {
 }
 
+- (void)addIcon:(SBIcon *)icon
+{
+	if (![icon isKindOfClass:%c(SBNewsstandIcon)])
+		%orig;
+}
+
+- (void)_addNewIconToDesignatedLocation:(SBIcon *)icon
+{
+	if (![icon isKindOfClass:%c(SBNewsstandIcon)])
+		%orig;
+}
+
+- (NSIndexPath *)_indexPathForFirstFreeNewsstandSlot
+{
+	return nil;
+}
+
 %end
 
 %hook SBDownloadingIcon
@@ -41,13 +58,9 @@
 	return NO;
 }
 
-%end
-
-%hook SBNewsstandIcon
-
-+ (id)allocWithZone:(NSZone *)zone
+- (void)setNewsstandDownload:(BOOL)isNewsstandDownload
 {
-	return nil;
+	%orig(NO);
 }
 
 %end
