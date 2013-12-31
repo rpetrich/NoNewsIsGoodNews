@@ -6,7 +6,7 @@ Architecture: iphoneos-arm
 Version: 1.0
 Description: Hide Newsstand icon and relocate apps to SpringBoard
 Name: NoNewsIsGoodNews
-Depends: firmware (>= 5.0), mobilesubstrate
+Depends: firmware (>= 5.0), mobilesubstrate (>= 0.9.5000)
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=nonewsisgoodnewsData
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=nonewsisgoodnewsData
 Sponsor: thebigboss.org <http://thebigboss.org>
