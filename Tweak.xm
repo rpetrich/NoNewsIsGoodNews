@@ -64,3 +64,12 @@
 }
 
 %end
+
+%hook SBIconController
+
+- (BOOL)isNewsstandEnabled
+{
+	return NO;
+}
+
+%end
